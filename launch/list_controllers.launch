@@ -1,0 +1,13 @@
+<launch>
+  <!-- 
+  Launch fake list_controllers Service
+
+  The controller names you want in the list are specified as arguments
+  e.g. 
+  left_arm_controller
+  --> 
+
+  <node name="fake_controllers_list" pkg="fake_controllers_list" type="fake_controllers_list" args="left_arm_controller right_arm_controller" output="screen" />
+
+</launch>
+

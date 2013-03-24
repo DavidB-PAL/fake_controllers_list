@@ -1,0 +1,22 @@
+<package>
+  <description brief="fake_controllers_list">
+A fake /list_controllers Service.
+
+For robots using controllers outside the ROS Controller Manager system. 
+It provides a /list_controllers Service that returns a list of user-specified controller names, and
+returns their state as 'running'.
+
+This is required as part of the Manipulation Pipeline, where the object_manipulator node calls the /list_controllers
+Service to check that the appropriate arm controller is running, before it attempts to grasp an object.
+  </description>
+  <author>David Butterworth</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/fake_controllers_list</url>
+
+  <depend package="roscpp"/>
+  <depend package="pr2_mechanism_msgs"/>
+
+</package>
+
+

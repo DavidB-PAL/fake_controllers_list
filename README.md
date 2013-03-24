@@ -20,6 +20,8 @@ This allows other nodes to query the list, then call the /switch_controller Serv
 The object_manipulator node from the Manipulation Pipeline calls the /list_controllers Service to check that the appropriate arm controller is running, before it attempts to grasp an object.
 
 Therefore, for robots using controllers outside the Controller Manager system, this node provides a fake Service that returns a list of user-specified controller names, and returns their state as 'running'.
+
+The controller names are specified as arguments in the launch file.
 <br>
 
 <br>
